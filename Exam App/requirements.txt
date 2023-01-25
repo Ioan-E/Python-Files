@@ -1,0 +1,34 @@
+# Build an application that will help create and deliver an exam. The exam should be based on questions.
+# The questions will be keys in a dictionary and the values will be a list with possible answers, correct answer and author.
+# The correct answer will be an index that is expected to start from 1.
+
+# A questions class will provide predefined questions and answers to be asked during an exam (mutable mapping).
+# When asked for a print, the questions and only the questions (no answers or other info) should be printed (str).
+# Additional info in order to understand the question should be printed if specifically asked for (repr).
+
+# Exams should generate a 3 questions short exam (quiz) with questions that inherit from the questions (sequence, inheritance).
+# A draft of the exam should be printed (str). 
+# More info regarding the exam class should be provided, and also the date of the exam creation (repr).
+
+# Because the exam could be checked by someone different than the author 
+# there will be a way to receive only the correct answers (mixin).
+
+# The appearance of the exams will be improved making sure the exam has title, name, and date (decorator).
+
+# If a students asks for sample questions they should be provided (generator).
+
+# An alternative option for adding questions should be provided (operator overloading).
+# It will not be "advertised".
+
+# When printing an exam the running time should be provided (context manager).
+# Also an error catcher should output the error and a message to further learn context managers :)
+
+# Logging should be provided for: initialisation, adding questions and removing questions, __str__ printing, 
+# calling for the correct answers (both in class and mixin) and using the alternative for adding questions. 
+# Also the logger should announce when a function is decorated.
+
+# Unit testing should be developed for: 
+# correct initialisation of both classes (including a check that all the attributes needed are in place)
+# adding questions (for alternative option also) and providing question samples.
+
+
