@@ -1,0 +1,30 @@
+News app!
+
+This App will be able to request the latest news from BBC, NBC, Fox, ProTv and Digi24 using requests and BeautifulSoup, then show them to the
+user in a fashionable and accessible manner using PyQt5 for GUI.
+
+Have a Header class that is a sequence. Header objects that have the following properties: text, href(link), and other attributes
+that we will keep in a list.
+
+Have a News class that is a mutable sequence. News objects only have a newslist list which will keep Header objects.
+Add operator overloading for '+=' so we can add headers to the news object more easily.
+
+Have a class for each of the news sources. Each class will have a method that will return all the news it finds on the front page
+and a generator that yields the headers it finds one by one.
+
+Have a mixin class. This class will have a method that takes a number as a parameter and will use the appropriate class generator
+to return the first given number of articles from the respective news source.
+
+Have a generator that yields only one header at a time so we can only show
+the first x articles from each news source
+
+Implement appropriate __str__ and __repr__ methods
+
+Using PyQt5 create an intuitive graphic user interface (GUI).
+Have a button that triggers a function that searches through the articles from specified sources by keyword.
+Have a button that triggers a context manager that will write the desired article headers to a file for later reading.
+Have a button that will refresh the textbox to its default state.
+
+Have a decorator that prettifies the data before it gets shown on the screen.
+
+Have logging and unittesting

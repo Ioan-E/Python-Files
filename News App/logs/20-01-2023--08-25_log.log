@@ -1,0 +1,39 @@
+INFO:NewsApp:Getting the first 2 headers from Bbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 44784
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Uproar in Serbia over Wagner recruiting for Russia, https://www.bbc.com/news/world-europe-64329371 to id[4538312464]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Jacinda Ardern says no regrets over decision to quit, https://www.bbc.com/news/world-asia-64342181 to id[4538312464]
+INFO:NewsApp:Getting the first 2 headers from Nbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 189996
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Guns in America, https://www.nbcnews.com/guns-in-america to id[4538312704]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Polar bear emerged unseen from snowstorm to kill mom and son before it was shot, https://www.nbcnews.com/news/us-news/polar-bear-emerged-unseen-snowstorm-kill-mom-son-was-shot-rcna66651 to id[4538312704]
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 44784
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 43065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 39875
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 189996
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Example news 1, Example link 1 to id[4563908544]
+DEBUG:NewsApp:Added Example news 2, Example link 2 to id[4563908544]
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 44784
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 42975
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 39875
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 189996
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 None
