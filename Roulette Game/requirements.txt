@@ -1,0 +1,49 @@
+Dear Colleague!
+
+Your challenge is to create a Roulette game.
+
+Create a class "Player" where you will create at least 5 players, with a gaming-name, and some informations about the player. 
+These informations, stored in a dictionary, will be the players name, age and an amount credit they want to play with.
+After creating the players, inherating a Mixin class, printing them will look like:
+
+******************************
+**** Players name: Jagger7 ***
+
+name: Mick Jagger
+age: 20 
+credit: 1000
+******************************
+
+Create an other class "TableOfPlayers" that will store the created players, by adding or
+removing them.
+
+Both classes, Players and TableOfPlayers must have their own custom "repr" and "str" methods.
+
+Create your custom list with the players that will participate the game (not neceserry the players of TableOfPlayers class). 
+Make it possible that more than 1 player can play the game, by asking the questions one by one.
+In the next steps, you will create the whole game and the logical functionalities.
+For the beginning, print out the games rules, the betting options and the winning rules.
+There are some steps you must follow:
+1. Ask the players which betting option they want to choose!
+-> On the roulette table players can bet any amount of credit they want (and have on their account), on different betting-options:
+1. on any number between 1-36
+2. by color (red/black)
+3. even / odd number
+4. low / high bet
+-> validate if the option is not between the enumerated options
+2. After choosing an option, ask the corresponding next question 
+-> ex. if they choose "2", ask '(red/black)'
+-> validate if the option is correct (ex. if not a good color, or a number is not in the option's range)
+3. Ask the amount of credit they want to bet on that choice, validate it and notify him:
+-> if the amount is higher than his credits
+-> if it's not a number
+
+4. A random number and color will be generated, and verify it with the players number (color,option) 
+By these different cases of betting, the player will get different winpoints: 
+case 1: 100% bonus of the amount he was betting. Case 2 and 3: 50% bonus of the amount he was betting. Case 4: 30%. 
+If the table wins, the player will loose the amount he was betting.
+If a player's credit gets to 0, the player must leave the table (by removing the player).
+After each turn, if the player still has credits, will be asked if they want to continue or leave the table.
+If all the players will quit the game, the roulette game will stop. 
+
+After all this, Enjoy the game!!! :)
