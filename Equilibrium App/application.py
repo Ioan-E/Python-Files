@@ -4,8 +4,8 @@ import datetime
 logging.basicConfig(level=logging.DEBUG, filename=f'{datetime.datetime.now().strftime("%Y-%m-%d")}_Equilibrium_log.log', filemode='w')
 logger = logging.getLogger(__name__)
 
-# Parent class. Mutable mapping type. It has 5 children classes: Physical, Spiritual, Emotional, Social, Intellectual.
 class PersonalDevelopment:
+    '''Parent class. Mutable mapping type. It has 5 children classes: Physical, Spiritual, Emotional, Social, Intellectual.'''
     def __init__(self, name = None, dict_of_activities = None):
         self.name = name
         self.dict_of_activities = dict_of_activities
@@ -26,11 +26,12 @@ class PersonalDevelopment:
         return len(self.dict_of_activities)
     
 
-# Operator == overloading. The method compares two instances of the PersonalDevelopment class
-# :param other:
-# :return: boolean flag weather self and other are the same or not
-# Two PersonalDevelopment objects are equal if they have identical list of activities and identical frequencies for each activity
+
     def __eq__(self, other):
+        '''Operator == overloading. The method compares two instances of the PersonalDevelopment class
+            :param other:
+            :return: boolean flag weather self and other are the same or not
+            Two PersonalDevelopment objects are equal if they have identical list of activities and identical frequencies for each activity'''
         for activity, frequency in self.dict_of_activities.items():
             if activity not in other.dict_of_activities:
                 return False
@@ -39,12 +40,13 @@ class PersonalDevelopment:
                     return False
         return True
 
-# Operator != overloading. The method compares two instances of the PersonalDevelopment class
-# :param other:
-# :return: the negation of the __eq__ method returned boolean
-# Two PersonalDevelopment objects are not equal if they do not have identical list of activities and they do not have
-# identical frequencies for each activity
-    def __ne__(self, other):        
+
+    def __ne__(self, other):
+        '''Operator != overloading. The method compares two instances of the PersonalDevelopment class
+            :param other:
+            :return: the negation of the __eq__ method returned boolean
+            Two PersonalDevelopment objects are not equal if they do not have identical list of activities and they do not have
+            identical frequencies for each activity'''        
         return not self.__eq__(other)
     
     def __lt__(self, other):
@@ -62,17 +64,18 @@ class PersonalDevelopment:
     def __gt__(self, other):
         return not self.__eq__(other) and not self.__lt__(other)
     
-    # Method to write in a file the activities implemented in a field
     def save_state(self):
+        '''Method to write in a file the activities implemented in a field'''
         file_name = f'{datetime.datetime.now().strftime("%Y-%m-%d")}_{self.name}.txt'
         with i_am_a_context_manager(file_name) as file:
             logger.info(f'Writing list of activities in {file_name}')
             file.write('Placeholder for list of activities')
 
 
-# Mixin class. Its only purpose is to make a nice print for Physical, Spiritual, Emotional, Social and Intellectual classes, using the
-# overwriting of __str__ method in child class
+
 class MixinPrint:
+    '''Mixin class. Its only purpose is to make a nice print for Physical, Spiritual, Emotional, Social and Intellectual classes, using the
+        overwriting of __str__ method in child class'''
     def __init__(self):
         pass
     
@@ -87,8 +90,9 @@ class MixinPrint:
         string += f'\n{star_line}\n'
         return (string)
 
-# Inherits from PersonalDevlopment class and MixinPrint class
+
 class Physical(PersonalDevelopment, MixinPrint):
+    '''Inherits from PersonalDevlopment class and MixinPrint class'''
     def __init__(self, name, dict_of_activities, BMI):
         logger.debug(f'Creating Physical object named {name}')
         super().__init__(name, dict_of_activities)
@@ -140,7 +144,8 @@ class Physical(PersonalDevelopment, MixinPrint):
         return (f'The representation of the object Physical is: ({self.name}, {self.dict_of_activities}, {self.BMI}')
         
     
-class Spiritual(PersonalDevelopment, MixinPrint):    
+class Spiritual(PersonalDevelopment, MixinPrint):
+    '''Inherits from PersonalDevlopment class and MixinPrint class'''    
     def __init__(self, name, dict_of_activities, spiritual_views):
             logger.debug(f'Creating Spiritual object named {name}')
             super().__init__(name, dict_of_activities)
@@ -192,7 +197,8 @@ class Spiritual(PersonalDevelopment, MixinPrint):
         return (f'The representation of the object Spiritual is: ({self.name}, {self.dict_of_activities}, {self.spiritual_views}')
 
 
-class Emotional(PersonalDevelopment, MixinPrint):    
+class Emotional(PersonalDevelopment, MixinPrint):
+    '''Inherits from PersonalDevlopment class and MixinPrint class'''    
     def __init__(self, name, dict_of_activities, EQ):
             logger.debug(f'Creating Emotional object named {name}')
             super().__init__(name, dict_of_activities)
@@ -244,7 +250,8 @@ class Emotional(PersonalDevelopment, MixinPrint):
         return (f'The representation of the object Emotional is: ({self.name}, {self.dict_of_activities}, {self.EQ}')
     
 
-class Social(PersonalDevelopment, MixinPrint):    
+class Social(PersonalDevelopment, MixinPrint):
+    '''Inherits from PersonalDevlopment class and MixinPrint class'''
     def __init__(self, name, dict_of_activities, dict_of_friends):
             logger.debug(f'Creating Social object named {name}')
             super().__init__(name, dict_of_activities)
@@ -296,7 +303,8 @@ class Social(PersonalDevelopment, MixinPrint):
         return (f'The representation of the object Social is: ({self.name}, {self.dict_of_activities}, {self.dict_of_friends}')
     
 
-class Intellectual(PersonalDevelopment, MixinPrint):        
+class Intellectual(PersonalDevelopment, MixinPrint):
+    '''Inherits from PersonalDevlopment class and MixinPrint class'''        
     def __init__(self, name, dict_of_activities, field_of_interest):
         logger.debug(f'Creating Intellectual object named {name}')
         super().__init__(name, dict_of_activities)
@@ -347,8 +355,9 @@ class Intellectual(PersonalDevelopment, MixinPrint):
     def __repr__(self):
         return (f'The representation of the object Intellectual is: ({self.name}, {self.dict_of_activities}, {self.field_of_interest}')
 
-# Sequence-like class(tuple). Holds PersonalDevelopment objects
+
 class DomainsCollection():
+    '''Sequence-like class(tuple). Holds PersonalDevelopment objects'''
     def __init__(self, name, domains_collection):
         logger.debug(f'Creating DomainsCollection object named {name}')
         self.name = name
@@ -370,8 +379,9 @@ class DomainsCollection():
         return (f'The representation of the object {self} is {self.name} = {self.domains_collection}')
 
 
-# This function will be used to decorate the check_status function 
+ 
 def i_am_a_decorator(function):
+    '''This function will be used to decorate the check_status function'''
     logger.debug(f'Decorating {function.__name__}')
     def inner_function(*args):
         printing_list = function(*args)
@@ -387,11 +397,11 @@ def i_am_a_decorator(function):
     return inner_function
 
 
-# Function compares two DomainsCollection objects, member by member
-# :param desired_state_collection, actual_state_collection
-# :return: a list with five tuples: desired state - status of the actual state compared with the desired state
 @i_am_a_decorator
 def check_status(desired_state_collection, actual_state_collection):
+    '''Function compares two DomainsCollection objects, member by member
+        :param desired_state_collection, actual_state_collection
+        :return: a list with five tuples: desired state - status of the actual state compared with the desired state'''
     logger.info("Looking for differences between desired state and actual state activities")
     logger.debug(f'Desired state collection is {desired_state_collection.name} and actual state is {actual_state_collection.name}')
     printing_list = []
@@ -405,10 +415,11 @@ def check_status(desired_state_collection, actual_state_collection):
     return printing_list
 
 
-# Implementation of a context manager that opens a file in __enter__ method (in order to write something in it) and
-# closes it in __exit__ method. No errors expected. The context manager is used in the method save_state in every of the five children
-# classes of PersonalDevelopment       
-class i_am_a_context_manager():    
+     
+class i_am_a_context_manager():
+    '''Implementation of a context manager that opens a file in __enter__ method (in order to write something in it) and
+    closes it in __exit__ method. No errors expected. The context manager is used in the method save_state in every of the five children
+    classes of PersonalDevelopment'''
     def __init__(self, file_name):
         self.file_name = file_name
     
