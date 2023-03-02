@@ -92,7 +92,7 @@ class MixinPrint:
 
 
 class Physical(PersonalDevelopment, MixinPrint):
-    '''Inherits from PersonalDevlopment class and MixinPrint class'''
+    '''Inherits from PersonalDevelopment class and MixinPrint class'''
     def __init__(self, name, dict_of_activities, BMI):
         logger.debug(f'Creating Physical object named {name}')
         super().__init__(name, dict_of_activities)
@@ -198,7 +198,7 @@ class Spiritual(PersonalDevelopment, MixinPrint):
 
 
 class Emotional(PersonalDevelopment, MixinPrint):
-    '''Inherits from PersonalDevlopment class and MixinPrint class'''    
+    '''Inherits from PersonalDevelopment class and MixinPrint class'''    
     def __init__(self, name, dict_of_activities, EQ):
             logger.debug(f'Creating Emotional object named {name}')
             super().__init__(name, dict_of_activities)
@@ -251,7 +251,7 @@ class Emotional(PersonalDevelopment, MixinPrint):
     
 
 class Social(PersonalDevelopment, MixinPrint):
-    '''Inherits from PersonalDevlopment class and MixinPrint class'''
+    '''Inherits from PersonalDevelopment class and MixinPrint class'''
     def __init__(self, name, dict_of_activities, dict_of_friends):
             logger.debug(f'Creating Social object named {name}')
             super().__init__(name, dict_of_activities)
@@ -304,7 +304,7 @@ class Social(PersonalDevelopment, MixinPrint):
     
 
 class Intellectual(PersonalDevelopment, MixinPrint):
-    '''Inherits from PersonalDevlopment class and MixinPrint class'''        
+    '''Inherits from PersonalDevelopment class and MixinPrint class'''        
     def __init__(self, name, dict_of_activities, field_of_interest):
         logger.debug(f'Creating Intellectual object named {name}')
         super().__init__(name, dict_of_activities)
