@@ -1,4 +1,4 @@
-###Equilibirum app
+### Equilibirum app
 
 Registers the actual and the desired outcome for 5 life domains. Compares them and provides the results.
 
