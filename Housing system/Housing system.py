@@ -10,6 +10,8 @@ class Room:
 
 
 class House:
+    '''Builds a House from Room class'''
+
     def __init__(self, available_space=100):
         self.rooms = []
         self.available_space = available_space
@@ -52,6 +54,8 @@ class House:
 
 
 class SingleFamilyHouse(House):
+    '''Inherits from House. Calculates taxes.'''
+
     def __init__(self, available_space = 200):
         super().__init__(available_space)
 
@@ -64,11 +68,15 @@ class SingleFamilyHouse(House):
 
 
 class TownHouse(House):
+    '''Inherits from House. Calculates taxes.'''
+
     def __init__(self, available_space = 100):
         super().__init__(available_space)
 
 
 class Apartment(House):
+    '''Inherits from House. Calculates taxes.'''
+
     def __init__(self, available_space = 80):
         super().__init__(available_space)
 
@@ -79,9 +87,11 @@ class Apartment(House):
 
 
 class Neighborhood:
+    '''Builds a Neighbourhood from House'''
+
     total_size = 0
 
-    def __init__(self):                                     #the pytest instantiates without name so I remove it
+    def __init__(self):                                     
         # self.name = name
         self.houses = []
     
@@ -101,6 +111,8 @@ class Neighborhood:
         return sum(house.size() for house in self.houses)
 
     def house_types(self):                                  #Counter generates a dictionary that counts the elements of an interable
+        '''Provides a dictionary with all the houses inside Neighbourhood'''
+
         return Counter(type(one_house).__name__
                        for one_house in self.houses)
     
@@ -109,6 +121,8 @@ class Neighborhood:
                    for one_house in self.houses])
 
     def find_with_room(self, **kwargs):
+        '''Looks for a house with one or several required rooms'''
+
         return {one_house
                 for one_house in self.houses
                 for one_room in one_house.rooms

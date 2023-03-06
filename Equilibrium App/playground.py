@@ -27,7 +27,7 @@ user_AI = Intellectual('Actual Intellectual', {'daily_reading': 15, 'memory_exer
 
 # # Showcasing the MixinPrint and the overwriting of the __str__ method
 
-# print(f'{user_DP} \n{user_DSp} \n{user_DE} \n{user_DSo} \n{user_DI}')
+print(f'{user_DP} \n{user_DSp} \n{user_DE} \n{user_DSo} \n{user_DI}')
 
 # # Showcasing the __repr__ method
 
@@ -40,36 +40,36 @@ user_ACollection = DomainsCollection('user\'s Actual Collection', (user_AP, user
 
 # Showcasing the __str__ method
 
-print(user_DCollection)
+# print(user_DCollection)
 
 # Showcasing the operators overloading
 
-print(f'Desired state on physical is greater than actual state: {user_DP > user_AP}')
-print(f'Desired state on spiritual is equal with actual state: {user_DSp == user_ASp}')
-print(f'Desired state on emotional is greater than actual state: {user_DE > user_AE}')
-print(f'Desired state on social is lesser than actual state: {user_DSo < user_ASo}')
-print(f'Desired state on social is lesser than actual state: {user_DSo < user_ASo}')
-print(f'Desired state on intellectual is lesser than actual state: {user_DI < user_AI}')
+# print(f'Desired state on physical is greater than actual state: {user_DP > user_AP}')
+# print(f'Desired state on spiritual is equal with actual state: {user_DSp == user_ASp}')
+# print(f'Desired state on emotional is greater than actual state: {user_DE > user_AE}')
+# print(f'Desired state on social is lesser than actual state: {user_DSo < user_ASo}')
+# print(f'Desired state on social is lesser than actual state: {user_DSo < user_ASo}')
+# print(f'Desired state on intellectual is lesser than actual state: {user_DI < user_AI}')
 
 # Showcasing the decorated function check_status
 
-check_status(user_DCollection, user_ACollection)
+# check_status(user_DCollection, user_ACollection)
 
 # Showcasing the usage of context manager to open and close files - for output, see the .txt file created in folder
 
-user_DP.save_state()
+# user_DP.save_state()
 
 # Schowcasing the usage of generator 
 
 gen = i_am_a_generator(user_dict_of_friends)
 
 # The code block below should be included in a coroutine in order not to block the execution of the app main functionalities
-while True:
-    try:
-        print(getgeneratorstate(gen))
-        print(f'Please recommend \u001b[35mEquilibrium\u001b[0m app to your friend, {next(gen)}')
-        sleep(2)
-    except StopIteration:
-        print('Thank you for recommending us to all your friends!\u2665')
-        print(getgeneratorstate(gen))
-        break
+# while True:
+    # try:
+    #     print(getgeneratorstate(gen))
+    #     print(f'Please recommend \u001b[35mEquilibrium\u001b[0m app to your friend, {next(gen)}')
+    #     sleep(2)
+    # except StopIteration:
+    #     print('Thank you for recommending us to all your friends!\u2665')
+    #     print(getgeneratorstate(gen))
+    #     break

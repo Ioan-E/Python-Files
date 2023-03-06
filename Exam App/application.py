@@ -9,6 +9,8 @@ logger = logging.getLogger(' final_project_log')
 logger.debug(' Start')
 
 class Questions:
+    '''Creates the questions needed for an exam. To instantiate a dictinary with a questionn key, answers, correct answer and user name is expected
+        A more detailed description is available on __repr__'''
 
     def __init__(self, q_and_a):
         self.q_and_a = q_and_a
@@ -95,6 +97,7 @@ class Questions:
 
 
 class Exam(Questions):
+    '''Creates an examen based on Questions class. __repr__ provides all the information needed'''
     def __init__(self, q_and_a):
         super().__init__(q_and_a)
         logger.info(f'The exam class has been called with the following data: {self.q_and_a}, id: {id(self.q_and_a)}, type: {type(self.q_and_a)}')
@@ -143,6 +146,7 @@ class Exam(Questions):
 
 
 class AnswersMixin:
+    '''Provides all the right answers'''
 
     def __init__(self, exam):
         super().__init__(exam)
@@ -191,7 +195,8 @@ def prepare_exam(exam):             #randomize question and answers(helps in red
 
 
 class TimeMyApp:
-
+    '''Dummy context manager'''
+    
     def __enter__(self):
         print('The timer has started')
         self.start = time.time()
@@ -205,12 +210,12 @@ class TimeMyApp:
             print(f'{type} error occured. Please duble check your code and learn to do better context managers.')
             return True
     
-test_questions = Questions({
-                    'What is business management?': [['a book', 'a field of study', 'a movie'], 2, 'Ionut'],
-                    'What is SWOT?': [['an analytical tool', 'a military force', 'a solution to business problems'], 1, 'Ada'],
-                    'How many forces are in The Porter Model?': [['1', '3', '5'], 3, 'Ionut']
-})
-test_exam = Exam(test_questions)
+# test_questions = Questions({
+#                     'What is business management?': [['a book', 'a field of study', 'a movie'], 2, 'Ionut'],
+#                     'What is SWOT?': [['an analytical tool', 'a military force', 'a solution to business problems'], 1, 'Ada'],
+#                     'How many forces are in The Porter Model?': [['1', '3', '5'], 3, 'Ionut']
+# })
+# test_exam = Exam(test_questions)
 # print(test_exam)
 # correct_answers = IWantAnswers(test_exam)
 # correct_answers.correct_exam_answers()
