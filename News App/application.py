@@ -15,18 +15,21 @@ digi24 = "https://www.digi24.ro/"
 
 now = datetime.now()
 date_string = now.strftime("%d-%m-%Y--%H-%M")
-logging.basicConfig(level=logging.DEBUG, filename=f'Python Files/For Git/News App/logs/{date_string}_log.log')
+logging.basicConfig(level=logging.DEBUG, filename=f'/Users/ioanenache/Documents/GitHub/Python-Files/News App/logs/{date_string}_log.log')
+
 logger = logging.getLogger('NewsApp')
 
 
 class FancyWrite:
+    '''Context generator for adding news to a file. Takes text and href as arguments for a fancy_write function'''
     file_is_created = False
 
     def __enter__(self):
         now = datetime.now()
         date_string = now.strftime("%d-%m-%Y")
         logger.info(f"Attempting to open the file '{date_string}_articles.txt'")
-        self.file = open(f"Python Files/For Git/News App/saved articles/{date_string}_articles.txt", "a")
+        self.file = open(f"/Users/ioanenache/Documents/GitHub/Python-Files/News App/saved articles/{date_string}_articles.txt", "a")
+        
         logger.debug(f"Opened the file for append")
         if not self.file_is_created:
             self.file.write(f"These are the articles you saved on {date_string}:\n")
@@ -43,6 +46,7 @@ class FancyWrite:
 
 
 class News():
+    '''Provides functionality for a news list that will be inherited by all news agencies'''
     def __init__(self):
         self.newslist = []
 
@@ -92,6 +96,7 @@ class NewsMixin():
 
 
 class Header():
+    '''Provides the header for the news'''
     def __init__(self, text, href, *args):
         self.attributes = [text, href]
         self.text = text
@@ -120,6 +125,7 @@ class Header():
 
 
 class Bbc(News, NewsMixin):
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
 
     @staticmethod
     def get_all_news():
@@ -151,6 +157,7 @@ class Bbc(News, NewsMixin):
 
 
 class Nbc(News, NewsMixin):
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
 
     @staticmethod
     def get_all_news():
@@ -179,6 +186,7 @@ class Nbc(News, NewsMixin):
 
 
 class Fox(News, NewsMixin):
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
 
     @staticmethod
     def get_all_news():
@@ -207,6 +215,7 @@ class Fox(News, NewsMixin):
 
 
 class Protv(News, NewsMixin):
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
 
     @staticmethod
     def get_all_news():
@@ -233,6 +242,7 @@ class Protv(News, NewsMixin):
 
 
 class Digi24(News, NewsMixin):
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
 
     @staticmethod
     def get_all_news():
@@ -499,8 +509,8 @@ class MainWindow(QMainWindow):
         bbc = bbc.get_first_x_news(5)
         nbc = Nbc()
         nbc = nbc.get_first_x_news(2)
-        fox = Fox()
-        fox = fox.get_first_x_news(1)
+        # fox = Fox()
+        # fox = fox.get_first_x_news(1)
         # protv = Protv()
         # protv = protv.get_first_x_news(5)
         # digi24 = Digi24()
@@ -518,12 +528,12 @@ class MainWindow(QMainWindow):
             alternate_string += f'{index}||{header.text}||{header.href}' + '\n'
             index += 1
         news_string += 'FOX:<br>'
-        for header in fox:
-            news_string += f'{atag}{header.href}\">{index}. {header.text}</a>'
-            news_string += '<br>'
-            alternate_string += f'{index}||{header.text}||{header.href}' + '\n'
-            index += 1
-        news_string += 'PROTV:<br>'
+        # for header in fox:
+        #     news_string += f'{atag}{header.href}\">{index}. {header.text}</a>'
+        #     news_string += '<br>'
+        #     alternate_string += f'{index}||{header.text}||{header.href}' + '\n'
+        #     index += 1
+        # news_string += 'PROTV:<br>'
         # for header in protv:
         #     news_string += f'{atag}{header.href}\">{index}. {header.text}</a>'
         #     news_string += '<br>'

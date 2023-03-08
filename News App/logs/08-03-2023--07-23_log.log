@@ -1,0 +1,87 @@
+DEBUG:NewsApp:Added Example news 1, Example link 1 to id[4375201392]
+DEBUG:NewsApp:Added Example news 2, Example link 2 to id[4375201392]
+DEBUG:NewsApp:Added Example news 3, Example link 3, Example bonus attribute to id[4375201392]
+INFO:NewsApp:Getting the first 4 headers from Bbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 45578
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added UK asylum plan very concerning, says UN official, https://www.bbc.com/news/uk-politics-64884435 to id[4375200432]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Two Americans dead after kidnapping in Mexico, https://www.bbc.com/news/world-latin-america-64878721 to id[4375200432]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added The Tokyo mayor battling 'boys' club politics', https://www.bbc.com/news/world-asia-64874853 to id[4375200432]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Bindi Irwin reveals endometriosis struggle, https://www.bbc.com/news/world-australia-64884116 to id[4375200432]
+INFO:NewsApp:Getting the first 2 headers from Nbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 118208
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Founder of the Chicago Italian beef shop that inspired ‘The Bear’ dies at 69, https://www.nbcnews.com/news/us-news/founder-chicago-italian-beef-shop-inspired-bear-dies-69-rcna73907 to id[4398493808]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Group of 4 Americans in deadly Mexico trip were childhood friends, https://www.nbcnews.com/news/us-news/victims-mexico-kidnapping-childhood-friends-rcna73904 to id[4398493808]
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 45578
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 118208
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Getting the next header in NBC
+INFO:NewsApp:Getting ALL available news from BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 45578
+DEBUG:NewsApp:Added UK asylum plan very concerning, says UN official, https://www.bbc.com/news/uk-politics-64884435 to id[4400475168]
+DEBUG:NewsApp:Added Two Americans dead after kidnapping in Mexico, https://www.bbc.com/news/world-latin-america-64878721 to id[4400475168]
+DEBUG:NewsApp:Added The Tokyo mayor battling 'boys' club politics', https://www.bbc.com/news/world-asia-64874853 to id[4400475168]
+DEBUG:NewsApp:Added Bindi Irwin reveals endometriosis struggle, https://www.bbc.com/news/world-australia-64884116 to id[4400475168]
+DEBUG:NewsApp:Added A sweet for India's festival of colours, https://www.bbc.com/travel/article/20230307-gujiya-a-flaky-pastry-to-celebrate-holi to id[4400475168]
+DEBUG:NewsApp:Added Thousands protest at Georgian 'foreign agent' bill, https://www.bbc.com/news/world-europe-64882475 to id[4400475168]
+DEBUG:NewsApp:Added How a 'pig butcher' romances and scams women, https://www.bbc.com/news/world-asia-64884036 to id[4400475168]
+DEBUG:NewsApp:Added Bumblebees learn to solve puzzles by watching peers, https://www.bbc.com/news/uk-64884107 to id[4400475168]
+DEBUG:NewsApp:Added 'This was a different Potter - a different Chelsea', https://www.bbc.com/sport/football/64883891 to id[4400475168]
+DEBUG:NewsApp:Added How cycling carried two sisters out of the Taliban’s reach, https://www.bbc.com/sport/cycling/63403027 to id[4400475168]
+DEBUG:NewsApp:Added ECB investigation 'woefully inadequate' - Vaughan lawyer, https://www.bbc.com/sport/cricket/64878133 to id[4400475168]
+DEBUG:NewsApp:Added A cult novel's secret diary entries, https://www.bbc.com/culture/article/20230307-the-power-of-forbidden-notebooks-hidden-diary-entries to id[4400475168]
+DEBUG:NewsApp:Added How Germany treats parental burnout, https://www.bbc.com/future/article/20230228-the-german-clinics-for-burnt-out-parents to id[4400475168]
+DEBUG:NewsApp:Added How Me Too changed work for Gen Z, https://www.bbc.com/worklife/article/20230307-did-me-too-change-the-workplace-for-gen-z to id[4400475168]
+DEBUG:NewsApp:Added The untold story of the Grand Canyon, https://www.bbc.com/travel/article/20230307-mary-colter-the-woman-who-shaped-the-us-southwest to id[4400475168]
+DEBUG:NewsApp:Added What is International Women's Day?, https://www.bbc.com/news/world-64723201 to id[4400475168]
+DEBUG:NewsApp:Added Controversial vitiligo skin cream may come to UK, https://www.bbc.com/news/health-64809406 to id[4400475168]
+DEBUG:NewsApp:Added What do Cate and Michelle have in common? 16 Oscars facts, https://www.bbc.com/news/entertainment-arts-64211195 to id[4400475168]
+DEBUG:NewsApp:Added 'We cut our website's carbon emissions by 520kg in a year', https://www.bbc.comhttps://www.bbc.co.uk/news/business-64623955 to id[4400475168]
+DEBUG:NewsApp:Added The mushrooms you can wear and build with, https://www.bbc.com/news/business-64810935 to id[4400475168]
+DEBUG:NewsApp:Added One fan's heartstopping go at getting Eurovision tickets, https://www.bbc.com/news/entertainment-arts-64882598 to id[4400475168]
+DEBUG:NewsApp:Added One fan's heartstopping go at getting..., https://www.bbc.com/news/entertainment-arts-64882598 to id[4400475168]
+DEBUG:NewsApp:Added Rob Burrow receives PM's ‘Points of..., https://www.bbc.com/news/uk-64876195 to id[4400475168]
+DEBUG:NewsApp:Added Japan's H3 rocket self-destructs after launch, https://www.bbc.com/news/world-asia-64873439 to id[4400475168]
+DEBUG:NewsApp:Added CCTV of Couzens moments before flashing..., https://www.bbc.com/news/uk-64868540 to id[4400475168]
+DEBUG:NewsApp:Added The crane which refuses to leave its human..., https://www.bbc.com/news/world-asia-india-64833175 to id[4400475168]
+DEBUG:NewsApp:Added WATCH: Brawl kicks off in Georgian parliament, https://www.bbc.com/news/world-europe-64866068 to id[4400475168]
+DEBUG:NewsApp:Added One-minute World News, https://www.bbc.com/news/10462520 to id[4400475168]
+DEBUG:NewsApp:Added Ceiling collapses, nearly hits commuter in US, https://www.bbc.com/news/world-us-canada-64865242 to id[4400475168]
+DEBUG:NewsApp:Added Stephen Bear: Watch the day Georgia Harrison..., https://www.bbc.com/news/uk-64856782 to id[4400475168]
+DEBUG:NewsApp:Added Fire tears through Bangladesh refugee camp, https://www.bbc.com/news/world-asia-64855076 to id[4400475168]
+DEBUG:NewsApp:Added Invasive plants outnumber British flora - report, https://www.bbc.com/news/science-environment-64842402 to id[4400475168]
+DEBUG:NewsApp:Added Eurovision fans targeted by hotel phishing scam, https://www.bbc.com/news/entertainment-arts-64822893 to id[4400475168]
+DEBUG:NewsApp:Added Five women sue Texas over abortion access, https://www.bbc.com/news/world-us-canada-64882712 to id[4400475168]
+DEBUG:NewsApp:Added Nobel scientist says 'UK research is in jeopardy', https://www.bbc.com/news/science-environment-64879544 to id[4400475168]
+DEBUG:NewsApp:Added The banned haters back on Twitter - BBC investigation, https://www.bbc.com/news/technology-64554381 to id[4400475168]
+DEBUG:NewsApp:Added World's most premature twins certified by Guinness, https://www.bbc.com/news/world-us-canada-64870470 to id[4400475168]
+DEBUG:NewsApp:Added 'Being vulnerable made me a better photographer', https://www.bbc.com/news/in-pictures-64837281 to id[4400475168]
+DEBUG:NewsApp:Added Robotaxi tech improves but can they make money?, https://www.bbc.com/news/business-64742934 to id[4400475168]
+DEBUG:NewsApp:Added Sake brewers toast big rise in global sales, https://www.bbc.com/news/business-64797853 to id[4400475168]
+DEBUG:NewsApp:Added What a bird's eye view of Africa reveals, https://www.bbc.com/news/world-africa-64862607 to id[4400475168]
+DEBUG:NewsApp:Added Do you know this baby? Putting names to archive photos, https://www.bbc.com/news/world-africa-64451314 to id[4400475168]
+DEBUG:NewsApp:Added Pet crocs and red carpets: Africa's top shots, https://www.bbc.com/news/world-africa-64823868 to id[4400475168]
+DEBUG:NewsApp:Added The devastated towns near Ukraine's front line, https://www.bbc.com/news/world-europe-64819471 to id[4400475168]
+DEBUG:NewsApp:Added Pictures show devastation after Greece train disaster, https://www.bbc.com/news/world-europe-64808123 to id[4400475168]
+INFO:NewsApp:Getting ALL available news from NBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 118208
+DEBUG:NewsApp:Added Founder of the Chicago Italian beef shop that inspired ‘The Bear’ dies at 69, https://www.nbcnews.com/news/us-news/founder-chicago-italian-beef-shop-inspired-bear-dies-69-rcna73907 to id[4400475888]
+DEBUG:NewsApp:Added Group of 4 Americans in deadly Mexico trip were childhood friends, https://www.nbcnews.com/news/us-news/victims-mexico-kidnapping-childhood-friends-rcna73904 to id[4400475888]
+INFO:NewsApp:Attempting to open the file '08-03-2023_articles.txt'
+DEBUG:NewsApp:Opened the file for append
+INFO:NewsApp:Adding the header 'Example title' to the file
+DEBUG:NewsApp:Closed the file

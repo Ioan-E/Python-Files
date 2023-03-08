@@ -49,10 +49,10 @@ nbc = nbc.get_first_x_news(2)
 print(str(nbc))
 print(repr(nbc))
 
-fox = Fox()
-fox = fox.get_first_x_news(1)
-print(str(fox))
-print(repr(fox))
+# fox = Fox()
+# fox = fox.get_first_x_news(1)
+# print(str(fox))
+# print(repr(fox))
 
 # protv = Protv()
 # protv = protv.get_first_x_news(1)
@@ -83,15 +83,15 @@ all_nbc_news = Nbc.get_all_news()
 # print(str(all_nbc_news))
 # print(repr(all_nbc_news))
 
-all_fox_news = Fox.get_all_news()
+# all_fox_news = Fox.get_all_news()
 # print(str(all_fox_news))
 # print(repr(all_fox_news))
 
-all_protv_news = Protv.get_all_news()
+# all_protv_news = Protv.get_all_news()
 # print(str(all_protv_news))
 # print(repr(all_protv_news))
 
-all_digi24_news = Digi24.get_all_news()
+# all_digi24_news = Digi24.get_all_news()
 # print(str(all_digi24_news))
 # print(repr(all_digi24_news))
 

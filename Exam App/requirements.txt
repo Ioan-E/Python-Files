@@ -30,6 +30,3 @@
 # Unit testing should be developed for: 
 # correct initialisation of both classes (including a check that all the attributes needed are in place)
 # adding questions (for alternative option also) and providing question samples.
-
-#test
-

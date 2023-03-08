@@ -1,0 +1,29 @@
+DEBUG:application:Game Started
+DEBUG:application:Game Started
+DEBUG:application:Game Started
+INFO:root:Starting the cronometer
+DEBUG:root:Writing out the players and credits before playing the game
+INFO:root:Playing with player Lucky Mike
+DEBUG:root:Asking player Lucky Mike for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Lucky Mike for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Lucky Mike for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Lucky Mike for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Lucky Mike for a betting amount
+DEBUG:root:Validating Lucky Mike's betting amount
+INFO:root:Playing with player Drag X
+DEBUG:root:Asking player Drag X for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Drag X for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Drag X for a betting amount
+DEBUG:root:Validating Drag X's betting amount
+INFO:root:Generating the random number and color
+INFO:root:Comparing players and tables numbers
+INFO:root:Comparing players and tables numbers
+INFO:root:No more players
+INFO:root:Stopping the cronometer
+DEBUG:root:Writing out the players and credits after playing the game

@@ -9,6 +9,7 @@ logger = logging.getLogger(__name__)
 logger.debug('Game Started')
 
 class PrittyPrinterMixin:
+    '''Better looking player's details'''
 
     def __str__(self):
 
@@ -22,6 +23,8 @@ class PrittyPrinterMixin:
 
 
 class Players(PrittyPrinterMixin):
+    '''Creates a player based on the name and the credits he enters the game'''
+
     def __init__(self,gamer_name, player_info):
         self.gamer_name = gamer_name
         self.player_info = player_info
@@ -73,6 +76,8 @@ class Players(PrittyPrinterMixin):
 
 
 class TableOfPlayers():
+    '''Builds a list of players at the table'''
+
     def __init__(self):
         self.players_list = {}
 
@@ -232,6 +237,7 @@ def exit_betting():
 all_time_scores = []
 
 def roulette(players):
+    '''Main function for playing the game'''
 
     print(rules)        
     print(betting_options)
@@ -324,6 +330,7 @@ def roulette(players):
             play_game = False
 
 class TimeIt:
+    '''Context generator to record the time lenght of a game'''
     def __init__(self,players):
         self.players = players
     

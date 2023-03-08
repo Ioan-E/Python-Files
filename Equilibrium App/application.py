@@ -76,6 +76,7 @@ class PersonalDevelopment:
 class MixinPrint:
     '''Mixin class. Its only purpose is to make a nice print for Physical, Spiritual, Emotional, Social and Intellectual classes, using the
         overwriting of __str__ method in child class'''
+    
     def __init__(self):
         pass
     

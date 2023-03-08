@@ -1,0 +1,11 @@
+Players credits BEFORE playing roulette: 
+
+Player: Lucky Mike CREDIT: 1000
+
+Player: Drag X CREDIT: 800
+******************************
+Players credits AFTER playing roulette:
+
+Player: Lucky Mike NEW-CREDIT: 0
+
+Player: Drag X NEW-CREDIT: 0

@@ -16,43 +16,43 @@ print(show_active_consultants)
 
 print(count_active_consultants)
 
-departments = [
-    Departments('Legal'),
-    Departments('Infrastructure'),
-    Departments('G&A'),
-    Departments('Professional Services'),
-    Departments('Customer Succes'),
-    Departments ('Global Markets'),
-    Departments ('Product Strategy'),
-    Departments ('Marketing')
-]
+# departments = [
+#     Departments('Legal'),
+#     Departments('Infrastructure'),
+#     Departments('G&A'),
+#     Departments('Professional Services'),
+#     Departments('Customer Succes'),
+#     Departments ('Global Markets'),
+#     Departments ('Product Strategy'),
+#     Departments ('Marketing')
+# ]
 
-for department in departments:
-    print(department)  
+# for department in departments:
+#     print(department)  
 
-managers = [
-    Managers ('Anil S.'),
-    Managers ('Linda M'),
-    Managers ('Karoline R.'),
-    Managers ('Rob M.'),
-    Managers ('Edouard R.'),
-    Managers ('Peter T.'),
-    Managers ('Ofir G.'),
-    Managers ('Joshua M.'),
-    Managers ('Antoine M.'),
-]
-for manager in managers:
-    print(manager)
+# managers = [
+#     Managers ('Anil S.'),
+#     Managers ('Linda M'),
+#     Managers ('Karoline R.'),
+#     Managers ('Rob M.'),
+#     Managers ('Edouard R.'),
+#     Managers ('Peter T.'),
+#     Managers ('Ofir G.'),
+#     Managers ('Joshua M.'),
+#     Managers ('Antoine M.'),
+# ]
+# for manager in managers:
+#     print(manager)
 
-manager_start_year = ManagersStartYear('Anil S.', 2019)
-print (manager_start_year)
+# manager_start_year = ManagersStartYear('Anil S.', 2019)
+# print (manager_start_year)
 
-employee_seniority_1 = SeniorityYear(2019) 
-employee_seniority_2 = SeniorityYear(2020) 
+# employee_seniority_1 = SeniorityYear(2019) 
+# employee_seniority_2 = SeniorityYear(2020) 
 
-if(employee_seniority_1>employee_seniority_2): 
-    print("First seniority year is greater than second seniority year") 
-else: 
-    print("Second seniority year is greater than first seniority year")
+# if(employee_seniority_1>employee_seniority_2): 
+#     print("First seniority year is greater than second seniority year") 
+# else: 
+#     print("Second seniority year is greater than first seniority year")
 
-country_list()
+# country_list()
