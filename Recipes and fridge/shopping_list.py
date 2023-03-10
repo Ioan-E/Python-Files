@@ -38,7 +38,7 @@ class Recipe:
 
 
 class RecipesBox:
-    '''Builds an instance with all the recipes created'''
+    '''Builds an instance with all the recipes created.'''
 
     def __init__(self):
         self._recipesbox_list = []
@@ -88,7 +88,7 @@ class RecipesBox:
         return self._recipesbox_list[index]
 
 class Fridge:
-    '''Stores and aupdates the available items in a Fridge'''
+    '''Stores and aupdates the available items in a Fridge.'''
 
     def __init__(self,name=None, inside_fridge=None):
         self.inside_fridge = inside_fridge
@@ -210,16 +210,17 @@ _.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._
 
 
 class PrettyRecipe(PrettyPrinter,Recipe):
-    '''A better looking Recipe class'''
+    '''A better looking Recipe class.'''
     pass
 
 
 class PrettyFridge(PrettyPrinter,Fridge):
-    '''A better looking Fridge class'''
+    '''A better looking Fridge class.'''
     pass
 
 def check_the_fridge(fridge, recipes):
-    '''Provides a list with all the recipes that have at least half the ingredients inside the fridge'''
+    '''Provides a list with all the recipes that have at least half the ingredients inside the fridge.'''
+
     half_or_more_ingredients_recipies = []
     less_than_half_ingredients_recipies = []
     for recipe in recipes:
@@ -261,7 +262,7 @@ def archive_shopping_list(fnc2):
 @archive_shopping_list
 @pretty_print_recipe
 def prepare_shopping_list(fridge, recipe):
-    '''Takes a fridge and recipe instance and provides a list with the missing ingredients'''
+    '''Takes a fridge and recipe instance and provides a list with the missing ingredients.'''
     shopping_list = {}
     for ingredient in recipe.keys():
         if ingredient in fridge:

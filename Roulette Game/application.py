@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 logger.debug('Game Started')
 
 class PrittyPrinterMixin:
-    '''Better looking player's details'''
+    '''Better looking player's details.'''
 
     def __str__(self):
 
@@ -23,7 +23,7 @@ class PrittyPrinterMixin:
 
 
 class Players(PrittyPrinterMixin):
-    '''Creates a player based on the name and the credits he enters the game'''
+    '''Creates a player based on the name and the credits he enters the game.'''
 
     def __init__(self,gamer_name, player_info):
         self.gamer_name = gamer_name
@@ -126,20 +126,20 @@ class TableOfPlayers():
 
         
     
-rules='''Welcome to Roulette!  
+rules = '''Welcome to Roulette!  
         In this game, you have a wheel that features red and black slots
         that have the numbers from 1 to 36 on them. 
         Except for the wheel, you have a table which also features the numbers and several 
         additional sectors on which you can place bets. After you place your bet, the table 
         will generate a random winning number (and color), and we will compare it with your bet. '''
 
-betting_options='''Betting options:
+betting_options = '''Betting options:
             1: on any number between 1-36 
             2: by color (red/black) 
             3: even / odd number
             4: low / high bet'''
 
-winning_rules='''Winning rules:
+winning_rules = '''Winning rules:
             Case 1: 100% bonus of the amount he was betting.
             Case 2 and 3: 50% bonus of the amount he was betting. 
             Case 4: 30% bonus of the amount he was betting. 
@@ -237,7 +237,7 @@ def exit_betting():
 all_time_scores = []
 
 def roulette(players):
-    '''Main function for playing the game'''
+    '''Main function for playing the game.'''
 
     print(rules)        
     print(betting_options)

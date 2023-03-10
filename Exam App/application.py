@@ -9,8 +9,11 @@ logger = logging.getLogger(' final_project_log')
 logger.debug(' Start')
 
 class Questions:
-    '''Creates the questions needed for an exam. To instantiate a dictinary with a questionn key, answers, correct answer and user name is expected
-        A more detailed description is available on __repr__'''
+    '''
+    Creates the questions needed for an exam. 
+    Parameters: dictionary with a question as key and value as list with options, correct answer and user name
+    A more detailed description is available on __repr__
+    '''
 
     def __init__(self, q_and_a):
         self.q_and_a = q_and_a
@@ -97,7 +100,8 @@ class Questions:
 
 
 class Exam(Questions):
-    '''Creates an examen based on Questions class. __repr__ provides all the information needed'''
+    '''Creates an examen based on Questions class. __repr__ provides all the information needed.'''
+
     def __init__(self, q_and_a):
         super().__init__(q_and_a)
         logger.info(f'The exam class has been called with the following data: {self.q_and_a}, id: {id(self.q_and_a)}, type: {type(self.q_and_a)}')
@@ -146,7 +150,7 @@ class Exam(Questions):
 
 
 class AnswersMixin:
-    '''Provides all the right answers'''
+    '''Provides all the right answers.'''
 
     def __init__(self, exam):
         super().__init__(exam)
@@ -183,7 +187,9 @@ def pretty_print_exam(function):
 
 
 @pretty_print_exam
-def prepare_exam(exam):             #randomize question and answers(helps in reducing cheating)
+def prepare_exam(exam):             
+    '''randomize question and answers(helps in reducing cheating)'''
+    
     exam_as_question_list = list(exam.keys())
     random.shuffle(exam_as_question_list)
     for question in exam_as_question_list:

@@ -21,7 +21,8 @@ logger = logging.getLogger('NewsApp')
 
 
 class FancyWrite:
-    '''Context generator for adding news to a file. Takes text and href as arguments for a fancy_write function'''
+    '''Context generator for adding news to a file. Takes text and href as arguments for a fancy_write function.'''
+
     file_is_created = False
 
     def __enter__(self):
@@ -46,7 +47,8 @@ class FancyWrite:
 
 
 class News():
-    '''Provides functionality for a news list that will be inherited by all news agencies'''
+    '''Provides functionality for a news list that will be inherited by all news agencies.'''
+
     def __init__(self):
         self.newslist = []
 
@@ -96,7 +98,8 @@ class NewsMixin():
 
 
 class Header():
-    '''Provides the header for the news'''
+    '''Provides the header for the news.'''
+
     def __init__(self, text, href, *args):
         self.attributes = [text, href]
         self.text = text
@@ -125,7 +128,7 @@ class Header():
 
 
 class Bbc(News, NewsMixin):
-    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news.'''
 
     @staticmethod
     def get_all_news():
@@ -157,7 +160,7 @@ class Bbc(News, NewsMixin):
 
 
 class Nbc(News, NewsMixin):
-    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news.'''
 
     @staticmethod
     def get_all_news():
@@ -215,7 +218,7 @@ class Fox(News, NewsMixin):
 
 
 class Protv(News, NewsMixin):
-    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news.'''
 
     @staticmethod
     def get_all_news():
@@ -242,7 +245,7 @@ class Protv(News, NewsMixin):
 
 
 class Digi24(News, NewsMixin):
-    '''Inherits from News and the NewsMixin. Provides two static methods to get news'''
+    '''Inherits from News and the NewsMixin. Provides two static methods to get news.'''
 
     @staticmethod
     def get_all_news():
