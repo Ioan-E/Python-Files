@@ -84,7 +84,7 @@ class RecipesBox:
             index = self._recipesbox_list.index(recipe)
         else:
             max_rand_no = len(self._recipesbox_list)
-            index = randrange(0, max_rand_no, 1) #?Ionut: aici nu pare a functiona
+            index = randrange(0, max_rand_no, 1)
         return self._recipesbox_list[index]
 
 class Fridge:
@@ -188,7 +188,7 @@ _.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._
         spacer = '''
  ) )                                                       ( ('''
         to_print=header
-        if(self.name):
+        if self.name:
             to_print+= self.__replace_line__(self.name) + spacer
         else:
             to_print+= self.__replace_line__('Our Fridge') + spacer
