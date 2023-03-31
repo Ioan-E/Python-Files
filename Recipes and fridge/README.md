@@ -1,4 +1,4 @@
-## Thermomix app mockup
+## Thermomix app mockup - recipies and fridge
 
 ### Description
 
