@@ -1,4 +1,12 @@
-from application import Questions, Exam, AnswersMixin, IWantAnswers, prepare_exam, pretty_print_exam, TimeMyApp
+from application import (
+    Questions,
+    Exam,
+    AnswersMixin,
+    IWantAnswers,
+    prepare_exam,
+    pretty_print_exam,
+    TimeMyApp,
+)
 
 first_questions = Questions({
                 'What is business management?': [['a book', 'a field of study', 'a movie'], 2, 'Ionut'],

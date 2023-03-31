@@ -1,4 +1,11 @@
-from application import Questions, Exam, AnswersMixin, IWantAnswers, prepare_exam, pretty_print_exam
+from application import (
+    Questions,
+    Exam,
+    AnswersMixin,
+    IWantAnswers,
+    prepare_exam,
+    pretty_print_exam,
+)
 import unittest
 
 class TestQuestions(unittest.TestCase):
